@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/coordinatorLayout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#5EE463"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.learn2crack.filedownload.MainActivity">
+
+        <Button
+            android:id="@+id/btn_download"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="Start Download"
+            android:textColor="@android:color/black"
+            android:paddingLeft="20dp"
+            android:backgroundTint="@color/white"
+            android:paddingRight="20dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_marginTop="48dp"
+            android:layout_below="@+id/btn_download"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/progress_text"
+            android:layout_below="@+id/progress"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>
